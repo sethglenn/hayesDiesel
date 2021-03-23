@@ -24,12 +24,28 @@
         <li><a class="textcolor" href="#">Parts</a></li>
         <li><a class="textcolor" href="#">Contact Us</a></li>
     </ul>
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.min.js"></script>
-    <script>
-        $(document).foundation();
-    </script>
+    <ul class="vertical menu" data-responsive-toggle="example-animated-menu" data-toggle="menu"
+        data-responsive-menu="drilldown small-accordion" style="max-width: 250px;">
+        <li>
+            <a id="menu" href="#">Item 1</a>
+            <ul class="vertical menu">
+                <li>
+                    <a href="#">Item 1A</a>
+                    <ul class="vertical menu">
+                        <li><a href="#">Item 1A</a></li>
+                        <li><a href="#">Item 1B</a></li>
+                        <li><a href="#">Item 1C</a></li>
+                        <li><a href="#">Item 1D</a></li>
+                        <li><a href="#">Item 1E</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <script src="js/vendor/jquery.js"></script>
+            <script src="js/vendor/what-input.js"></script>
+            <script src="js/vendor/foundation.min.js"></script>
+            <script>
+                $(document).foundation();
+            </script>
 
 </body>
 
