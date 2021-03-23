@@ -7,7 +7,7 @@ const router = require('express').Router();
 
 // Routes the user to report a crime
 router.get('/', (_req, res) => {
-  res.sendFile(path.join(__dirname, '../pages/index.html'));
+  res.sendFile(path.join(__dirname, '../../pages/index.html'));
 });
 
 
