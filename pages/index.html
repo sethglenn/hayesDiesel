@@ -6,15 +6,15 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hayes Diesel</title>
+
     <link rel="stylesheet" href="./style/index.css" />
-    <link rel="stylesheet" href="./css/foundation.css" />
+    <link rel="stylesheet" href="./style/responsiveIndex.css" />
+    <link rel="stylesheet" href="./style/css/foundation.css" />
+    <link rel="stylesheet" href="./style/css/foundation.css.map" />
     <!-- Compressed CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
         integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
 
-    <!-- Compressed JavaScript
-    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
-        integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
@@ -24,10 +24,10 @@
         <li><a class="textcolor" href="#">Parts</a></li>
         <li><a class="textcolor" href="#">Contact Us</a></li>
     </ul>
-    <ul class="vertical menu" data-responsive-toggle="example-animated-menu" data-toggle="menu"
-        data-responsive-menu="drilldown small-accordion" style="max-width: 250px;">
+    <ul id="vertical-menu" class="vertical menu" data-hide-for="large" data-responsive-menu="drilldown medium-accordion" data-toggle="vertical menu"
+        style="max-width: 250px;">
         <li>
-            <a id="menu" href="#">Item 1</a>
+            <a href="#">Item 1</a>
             <ul class="vertical menu">
                 <li>
                     <a href="#">Item 1A</a>
@@ -39,13 +39,24 @@
                         <li><a href="#">Item 1E</a></li>
                     </ul>
                 </li>
+                <li><a href="#">Item 1B</a></li>
             </ul>
-            <!-- <script src="js/vendor/jquery.js"></script>
-            <script src="js/vendor/what-input.js"></script>
-            <script src="js/vendor/foundation.min.js"></script>
-            <script>
-                $(document).foundation();
-            </script> -->
+        </li>
+    </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+        integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+
+        // Patch for a Bug in v6.3.1
+        // $(window).on('changed.zf.mediaquery', function () {
+        //     $('.is-accordion-submenu.invisible').removeClass('invisible');
+        // });
+    </script>
 
 </body>
 
