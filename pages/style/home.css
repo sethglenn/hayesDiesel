@@ -1,5 +1,7 @@
 .top-bar {
     background-color: lightslategray;
+    height: 80px;
+    padding-top: 20px;
 }
 li, a {   
     color: black;
@@ -13,4 +15,7 @@ a:hover, a:focus, a:active{
 }
 .menu2 {
     height: 0px;
+}
+.button{
+    background-color: black;
 }
