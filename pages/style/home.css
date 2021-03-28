@@ -19,3 +19,9 @@ a:hover, a:focus, a:active{
 .button{
     background-color: black;
 }
+.shift{
+    font-size: 23px;
+}
+#color2{
+    background-color: lightslategray;
+}

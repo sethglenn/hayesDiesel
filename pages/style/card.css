@@ -1,0 +1,17 @@
+.card{
+    background-color: lightslategray;
+    height: 200px;
+    width: 25%;
+    margin-left: 686px;
+    margin-top: 180px;
+    margin-bottom: 340px;
+    border-radius: 20px;
+}
+.form{
+    padding-top: 35px;
+    padding-left: 30px;
+    padding-right: 44px;
+}
+body{
+    background-color: black;
+}
