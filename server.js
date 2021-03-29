@@ -1,8 +1,9 @@
 require('dotenv').config();
 const express = require('express');
-const routes = require('./routes/html');
+const routes = require('./routes/html/html');
 const helmet = require('helmet');
 const path = require('path');
+const morgan = require('morgan');
 
 const app = express();
 
@@ -21,6 +22,8 @@ app.use(helmet({ contentSecurityPolicy: false }));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, './pages')));
+
+app.use(morgan('tiny'));
 
 app.use(routes);
 
